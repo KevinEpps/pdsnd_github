@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import calendar
 
-
+#Set global variables
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -26,17 +26,17 @@ def get_filters():
     
     print("\nHello! Let's explore some US bikeshare data!\n")
 
-    #Get user input to determine which city to analyze
+    #Get user input to determine which city to analyze and make sure it's valid
     city = input('Select a city to analyze: Chicago, New York City, or Washington.\n').lower()
     while city not in CITIES:
         city = input('Select a valid city:  Chicago, New York City, or Washington.\n').lower()
 
-    #Get user input to determine which month/s to analyze
+    #Get user input to determine which month/s to analyze and make sure it's valid
     month = input('\nChoose month! January, February, March, April, May, June or All.\n').title()
     while month not in MONTHS:
         month = input('Enter a valid month.\n').title()
 
-    #Get user input to determine which day/s to analyze
+    #Get user input to determine which day/s to analyze and make sure it's valid
     day = input('\nChoose a day of the week: Sunday, Monday, Tuesday...or All\n').title()
     while day not in DAYS:
         day = input('Enter a valid day.\n').title()
