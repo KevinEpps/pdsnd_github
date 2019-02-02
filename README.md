@@ -5,7 +5,7 @@ Created 31JAN19.
 Udacity Bikeshare Data Project
 
 ### Description
-Analyze, interpret and vizualize data gathered from bikeshare customers in different cities
+Analyze, interpret and vizualize data gathered from bikeshare customers in different cities.  Provides data to determine usage, customer analytics, etc.
 
 ### Files used
 Bikeshare_Final.py
