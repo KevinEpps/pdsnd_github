@@ -3,7 +3,8 @@ import pandas as pd
 import numpy as np
 import calendar
 
-#Set global variables
+
+#Define global variables
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -100,7 +101,7 @@ def time_stats(df):
     # display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
     popular_hour = df['hour'].mode()[0]
-    print('The most popular start hour: {}'.format(popular_hour))
+    print('The most popular start hour (24hr): {}'.format(popular_hour))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
